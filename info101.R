@@ -33,10 +33,10 @@ woa.wide <- read.csv("woa.csv", skip = 1)
 
 # P5 Fill in the blanks below to create a vector of the depth values.
 
-
+# CHANGED LINE 39 FROM 550 to 500!!!!!!
 depths <- c(
   seq(0, 100, by = 5),
-  seq(125, 550, by = 25),
+  seq(125, 500, by = 25),
   seq(550, 2000, by = 50),
   seq(2100, 5500, by = 100)
 )
@@ -46,7 +46,7 @@ depths <- c(
 
 woa_colnames <- c("latitude", "longitude", paste0("depth_", depths))
 
-
+colnames(woa.wide) <- woa_colnames
 
 # Analyzing wide-format data ----------------------------------------------
 
